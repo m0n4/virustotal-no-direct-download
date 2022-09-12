@@ -3,9 +3,11 @@
 <head>
 </head>
 <body>
-  <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2Fm0n4%2Fvirustotal-no-direct-download%2Fmain%2FVT_blocklist.txt&amp;title=VT_blocklist">Abonnement</a>
-  <script>// Simulate a mouse click:
-    window.location.href = "https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2Fm0n4%2Fvirustotal-no-direct-download%2Fmain%2FVT_blocklist.txt&amp;title=VT_blocklist";
+  <a id="redirect" href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2Fm0n4%2Fvirustotal-no-direct-download%2Fmain%2FVT_blocklist.txt&amp;title=VT_blocklist">Abonnement</a>
+  <script>
+    setTimeout(() => {
+      document.getElementById('redirect').click();
+    }, "1000")
   </script>
 </body>
 </html>
