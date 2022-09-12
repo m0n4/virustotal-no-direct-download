@@ -5,9 +5,15 @@
 <body>
   <a id="redirect" href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2Fm0n4%2Fvirustotal-no-direct-download%2Fmain%2FVT_blocklist.txt&amp;title=VT_blocklist">Abonnement</a>
   <script>
-    setTimeout(() => {
-      document.getElementById('redirect').click();
-    }, "1000")
+    function simulateMouseEVent(type, elem) {
+      elem.dispatchEvent(new MouseEvent(type, {
+        view: window,
+        bubbles: true,
+        cancelable: true
+      }));
+      return elem; 
+    }
+    simulateMouseEVent('click',  document.getElementById("redirect"));
   </script>
 </body>
 </html>
