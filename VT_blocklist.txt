@@ -1,0 +1,1 @@
+||virustotal.com/ui/files/*/download_url
