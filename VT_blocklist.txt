@@ -1,3 +1,2 @@
 ! Title: VirusTotal no direct download
-! Description: prevents direct downloads on virustotal (except for zipped archives)
 ||virustotal.com/ui/files/*/download_url
