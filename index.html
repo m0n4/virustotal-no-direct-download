@@ -131,7 +131,7 @@ function detectAdblock() {
 }
 
 detectAdblock().then((res) => { 
-  if (!(res.uBlockOrigin || res.adblockPlus)) {
+  if (res.uBlockOrigin || res.adblockPlus) {
     document.getElementById('install').style.display = 'none';
   }
 });
