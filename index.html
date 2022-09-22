@@ -72,7 +72,7 @@
 </head>
 <body>
   <p class="container">
-    <a target="_blank" href="https://ublockorigin.com/" id="install">uBlock Origin</a>
+    <a href="https://ublockorigin.com" target="_blank" id="install"><img src="https://ublockorigin.com/img/uBlock-Origin.svg" style="max-width:250px;"></a>
     <br>
     <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2Fm0n4%2Fvirustotal-no-direct-download%2Fmain%2FVT_blocklist.txt&amp;title=VT_blocklist" class="button"></a>
    </p>
@@ -131,7 +131,7 @@ function detectAdblock() {
 }
 
 detectAdblock().then((res) => { 
-  if !(res.uBlockOrigin || res.adblockPlus) {
+  if (!(res.uBlockOrigin || res.adblockPlus)) {
     document.getElementById('install').style.display = 'none';
   }
 });
