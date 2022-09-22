@@ -1,2 +1,3 @@
+[Adblock Plus 2.0]
 ! Title: VirusTotal no direct download
 ||virustotal.com/ui/files/*/download_url
